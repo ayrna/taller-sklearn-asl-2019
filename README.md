@@ -83,7 +83,7 @@ Una vez dentro del libro, ejecuta la única celda de código pulsando sobre el b
 Si tu entorno satisface todos los requisitos para el tutorial, el código ejecutado debería mostrar una salida como la siguiente:
 ```bash
 Using python in /usr/local
-2.7.11 (default, Feb 11 2016, 10:11:51) 
+2.7.11 (default, Feb 11 2016, 10:11:51)
 [GCC 5.3.0]
 
 [ OK ] PIL version 1.1.7
@@ -132,15 +132,13 @@ Para cargar cualquier sesión debes iniciar ``jupyter notebook``.
 
 ### 2. Aprendizaje no supervisado (jueves 14 marzo)
 
-Nota: Mantenemos la numeración de los cuadernos con el [curso original de sklearn](https://github.com/pagutierrez/tutorial-sklearn) para quién quiera hacer la versión completa del curso.
-
-- 2.02\. Aprendizaje no supervisado: agrupamiento [[notebook](talleres_inov_docente/2-02-aprendizaje_no_supervisado_agrupamiento.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-02-aprendizaje_no_supervisado_agrupamiento.html)]
-- 2.01\. Aprendizaje no supervisado: transformación [[notebook](talleres_inov_docente/2-01-aprendizaje_no_supervisado_transformaciones.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-01-aprendizaje_no_supervisado_transformaciones.html)]
-- 2.05\. Encadenamiento con tuberías [[notebook](talleres_inov_docente/2-05-encadenando_con_tuberias.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-05-encadenando_con_tuberias.html)]
-- 3.01\. Extracción de características de un texto mediante *Bag-of-Words* (bolsas de palabras) [[notebook](talleres_inov_docente/3-01-extraccion_caracteristicas_texto.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-01-extraccion_caracteristicas_texto.html)]
-- 3.02\. Caso de estudio - Clasificación de texto para detección de spam en SMS [[notebook](talleres_inov_docente/3-02-caso_estudio_deteccion_spam_SMS.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-02-caso_estudio_deteccion_spam_SMS.html)]
-- 3.05\. Aprendizaje supervisado: árboles de decisión y bosques aleatorios [[notebook](talleres_inov_docente/3-05-arboles_y_bosques.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-05-arboles_y_bosques.html)]
-- 3.06\. Selección de características [[notebook](talleres_inov_docente/3-06-seleccion_caracteristicas.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-06-seleccion_caracteristicas.html)]
+- 2.01\. Aprendizaje no supervisado: agrupamiento [[notebook](talleres_inov_docente/2-01-aprendizaje_no_supervisado_agrupamiento.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-01-aprendizaje_no_supervisado_agrupamiento.html)]
+- 2.02\. Aprendizaje no supervisado: transformación [[notebook](talleres_inov_docente/2-02-aprendizaje_no_supervisado_transformaciones.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-02-aprendizaje_no_supervisado_transformaciones.html)]
+- 2.03\. Encadenamiento con tuberías [[notebook](talleres_inov_docente/2-03-encadenando_con_tuberias.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-03-encadenando_con_tuberias.html)]
+- 2.04\. Extracción de características de un texto mediante *Bag-of-Words* (bolsas de palabras) [[notebook](talleres_inov_docente/2-04-extraccion_caracteristicas_texto.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-04-extraccion_caracteristicas_texto.html)]
+- 2.05\. Caso de estudio - Clasificación de texto para detección de spam en SMS [[notebook](talleres_inov_docente/2-05-caso_estudio_deteccion_spam_SMS.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-05-caso_estudio_deteccion_spam_SMS.html)]
+- 2.06\. Aprendizaje supervisado: árboles de decisión y bosques aleatorios [[notebook](talleres_inov_docente/2-06-arboles_y_bosques.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-06-arboles_y_bosques.html)]
+- 2.07\. Selección de características [[notebook](talleres_inov_docente/2-07-seleccion_caracteristicas.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-07-seleccion_caracteristicas.html)]
 
 # Referencias
 Este tutorial es una versión reducida del [tutorial original de sklearn por Pedro A. Gutiérrez](https://github.com/pagutierrez/tutorial-sklearn), que a su vez se baja en el tutorial de Alex Gramfort y Andreas Mueller [[Github]](https://github.com/amueller/scipy-2017-sklearn)[[Youtube1]](https://www.youtube.com/watch?v=2kT6QOVSgSg)[[Youtube2]](https://www.youtube.com/watch?v=WLYzSas511I)
