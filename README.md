@@ -2,6 +2,10 @@
 
 Este repositorio contiene una serie de material sobre un breve tutorial sobre ``scikit-learn`` en Python. Está basado en el tutorial de ``scikit-learn`` realizado en la conferencia Scipy2017 (ver referencias).
 
+## Presentación
+
+Comenzaremos introduciendo algunos conceptos teóricos a través de la siguiente [presentación](https://docs.google.com/presentation/d/1EHmbd30TjFOzENFPcowruM2wIM6DfO6wjwRLtp3fZgA/edit#slide=id.p).
+
 ## Conseguir el material para el tutorial
 
 Si tienes una cuenta de Github, la forma más conveniente de bajar el material es realizar un clone del repositorio GitHub o hacer un fork. Puedes clonar el repositorio con el comando:
