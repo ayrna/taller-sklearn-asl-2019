@@ -61,12 +61,14 @@ Los equipos de la UCO están provistos de todo el material necesario para crear 
 ```bash
 $ pip install --user --upgrade scikit-learn pandas
 ```
-Como puedes observamos, instalamos las librerías con la opción ``--user``, ya que si no requeriríamos permisos de administración. Si tienes algún tipo de problema durante la instalación, puedes limpiar la carpeta ``$HOME/.local/lib/python2.7/site-packages``, pero vigila previamente que no tengas librerías que quieras mantener.
+Como puedes observamos, instalamos las librerías con la opción ``--user``, ya que si no requeriríamos permisos de administración. Si tienes algún tipo de problema durante la instalación, puedes limpiar la carpeta ``$HOME/.local/lib/python2.7/site-packages``, pero vigila previamente que no tengas librerías que quieras mantener. Si os quedáis sin espacio durante la instalación, también podéis vaciar el directorio ``$HOME/.cache/pip``. Esta última carpeta puede borrarse tras la instalación.
 
 En algunas instalaciones de Linux hemos visto que la dependencia ``argparse`` no se instala automáticamente, puedes arreglarlo así:
 ```bash
-$ pip install argparse
+$ pip install --user --upgrade argparse
 ```
+
+
 
 ## Revisión de una correcta instalación
 
@@ -80,18 +82,17 @@ Una vez dentro del libro, ejecuta la única celda de código pulsando sobre el b
 
 Si tu entorno satisface todos los requisitos para el tutorial, el código ejecutado debería mostrar una salida como la siguiente:
 ```bash
-Using python in /home/ayrna/anaconda3
-3.6.1 |Anaconda 4.4.0 (64-bit)| (default, May 11 2017, 13:09:58)
-[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+Using python in /usr/local
+2.7.11 (default, Feb 11 2016, 10:11:51) 
+[GCC 5.3.0]
 
-[ OK ] ipywidgets version 7.1.1
-[ OK ] scipy version 1.0.0
 [ OK ] PIL version 1.1.7
-[ OK ] IPython version 5.4.1
-[ OK ] numpy version 1.14.0
-[ OK ] pandas version 0.22.0
 [ OK ] matplotlib version 2.1.2
-[ OK ] sklearn version 0.19.1
+[ OK ] scipy version 1.2.1
+[ OK ] IPython version 4.0.0
+[ OK ] numpy version 1.16.1
+[ OK ] pandas version 0.24.1
+[ OK ] sklearn version 0.20.2
 ```
 Aunque no sea un requisito, te recomendamos actualizar los paquetes Python a su ultima versión, para así asegurar la mejor compatibilidad con el material didáctico. Puedes actualizar los paquetes con los comandos:
 ```bash
@@ -117,7 +118,7 @@ El tamaño de la descarga de los ficheros es, aproximadamente, 280MB y, una vez 
 Para cargar cualquier sesión debes iniciar ``jupyter notebook``.
 
 
-### 1. Visualización, aprendizaje supervisado y métodos de evaluación (viernes 7 abril)
+### 1. Visualización, aprendizaje supervisado y métodos de evaluación (jueves 21 febrero)
 
 -  1.01\. Introducción a aprendizaje automático en Python [[notebook](talleres_inov_docente/1-01-introduccion_aprendizaje_automatico.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/1-01-introduccion_aprendizaje_automatico.html)]
 - 1.02\. Herramientas científicas en Python [[notebook](talleres_inov_docente/1-02-herramientas_cientificas_python.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/1-02-herramientas_cientificas_python.html)]
@@ -129,18 +130,13 @@ Para cargar cualquier sesión debes iniciar ``jupyter notebook``.
 - 1.08\. Validación cruzada y métodos de evaluación de rendimiento [[notebook](talleres_inov_docente/1-08-validacion_cruzada.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/1-08-validacion_cruzada.html)]
 - 1.09\. Selección de parámetros, validación y test [[notebook](talleres_inov_docente/1-09-complejidad_modelos_busqueda_grid.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/1-09-complejidad_modelos_busqueda_grid.html)]
 
-### 2. Aprendizaje no supervisado (viernes 20 abril)
+### 2. Aprendizaje no supervisado (jueves 14 marzo)
 
 Nota: Mantenemos la numeración de los cuadernos con el [curso original de sklearn](https://github.com/pagutierrez/tutorial-sklearn) para quién quiera hacer la versión completa del curso.
 
 - 2.02\. Aprendizaje no supervisado: agrupamiento [[notebook](talleres_inov_docente/2-02-aprendizaje_no_supervisado_agrupamiento.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-02-aprendizaje_no_supervisado_agrupamiento.html)]
 - 2.01\. Aprendizaje no supervisado: transformación [[notebook](talleres_inov_docente/2-01-aprendizaje_no_supervisado_transformaciones.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-01-aprendizaje_no_supervisado_transformaciones.html)]
 - 2.05\. Encadenamiento con tuberías [[notebook](talleres_inov_docente/2-05-encadenando_con_tuberias.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/2-05-encadenando_con_tuberias.html)]
-
-### 3. Aspectos avanzados (jueves 3 de mayo)
-
-Nota: Mantenemos la numeración de los cuadernos con el [curso original de sklearn](https://github.com/pagutierrez/tutorial-sklearn) para quién quiera hacer la versión completa del curso.
-
 - 3.01\. Extracción de características de un texto mediante *Bag-of-Words* (bolsas de palabras) [[notebook](talleres_inov_docente/3-01-extraccion_caracteristicas_texto.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-01-extraccion_caracteristicas_texto.html)]
 - 3.02\. Caso de estudio - Clasificación de texto para detección de spam en SMS [[notebook](talleres_inov_docente/3-02-caso_estudio_deteccion_spam_SMS.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-02-caso_estudio_deteccion_spam_SMS.html)]
 - 3.05\. Aprendizaje supervisado: árboles de decisión y bosques aleatorios [[notebook](talleres_inov_docente/3-05-arboles_y_bosques.ipynb)][[html](https://rawgit.com/ayrna/tutorial-sklearn/master/talleres_inov_docente/3-05-arboles_y_bosques.html)]
