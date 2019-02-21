@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>2-02-aprendizaje_no_supervisado_agrupamiento</title>
+<title>2-01-aprendizaje_no_supervisado_agrupamiento</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -539,8 +539,8 @@ La implementación estándar de K-means utiliza la distancia Euclídea, por lo q
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;¿Hemos acertado en todas las etiquetas?&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="n">labels</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&#39;¿En cuantas hemos fallado?&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">y</span> <span class="o">!=</span> <span class="n">labels</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;¿Hemos acertado en todas las etiquetas? </span><span class="si">%s</span><span class="s">&#39;</span><span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="n">labels</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;¿En cuantas hemos fallado? </span><span class="si">%s</span><span class="s">&#39;</span><span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">y</span> <span class="o">!=</span> <span class="n">labels</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -553,8 +553,8 @@ La implementación estándar de K-means utiliza la distancia Euclídea, por lo q
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&apos;\xc2\xbfHemos acertado en todas las etiquetas?&apos;, False)
-(&apos;\xc2\xbfEn cuantas hemos fallado?&apos;, 100)
+<pre>¿Hemos acertado en todas las etiquetas? False
+¿En cuantas hemos fallado? 100
 </pre>
 </div>
 </div>
@@ -1212,7 +1212,7 @@ TIqyBGCMMSnKEoAxxqSo/wen7RquWxfpzAAAAABJRU5ErkJggg==
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s">&#39;Porcentaje de precisión:&#39;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">labels</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Porcentaje de precisión: </span><span class="si">%s</span><span class="s">&#39;</span><span class="o">%</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">labels</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">labels</span><span class="p">))</span>
 </pre></div>
 
@@ -1226,7 +1226,7 @@ TIqyBGCMMSnKEoAxxqSo/wen7RquWxfpzAAAAABJRU5ErkJggg==
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&apos;Porcentaje de precisi\xc3\xb3n:&apos;, 0.0)
+<pre>Porcentaje de precisión: 0.0
 [[ 0  0 34]
  [33  0  0]
  [ 0 33  0]]
@@ -1974,7 +1974,7 @@ LwoOERHJy/8HONBaYMOJZ0oAAAAASUVORK5CYII=
 
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">224</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_filtered</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X_filtered</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y_pred</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">u&quot;Distinto tamaño&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">u&quot;Distinto tamaño&quot;</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -1984,15 +1984,6 @@ LwoOERHJy/8HONBaYMOJZ0oAAAAASUVORK5CYII=
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Text(0.5,1,u&apos;Distinto tama\xf1o&apos;)</pre>
-</div>
-
-</div>
 
 <div class="output_area"><div class="prompt"></div>
 
@@ -4271,19 +4262,6 @@ YII=
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -4459,11 +4437,11 @@ For comparison, a quantized image using a random codebook (colors picked up
 randomly) is also shown.
 
 Fitting model on a small sub-sample of the data
-done in 0.828s.
+done in 0.753s.
 Predicting color indices on the full image (k-means)
-done in 0.415s.
+done in 1.176s.
 Predicting color indices on the full image (random)
-done in 0.378s.
+done in 0.955s.
 </pre>
 </div>
 </div>
